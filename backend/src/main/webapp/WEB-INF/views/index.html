@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="utf-8">
 		<title> SmartAdmin </title>
 		<meta name="description" content="">
 		<meta name="author" content="">
-			
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<!-- #CSS Links -->
@@ -323,6 +323,11 @@
 				-->
 
 				<ul>
+					<li class="" th:each="map:${listmap}">
+						<a href="index.html" title="blank_"><i class="fa fa-lg fa-fw fa-home"></i>
+							<span class="menu-item-parent" th:text="${map['title']}"></span>
+						</a>
+					</li>
 					<li class="">
 						<a href="index.html" title="blank_"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Blank</span></a>
 					</li>

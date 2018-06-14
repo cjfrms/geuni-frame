@@ -1,6 +1,5 @@
 package com.geuni.demo;
 
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,9 +22,9 @@ public class SampleController {
         Map<String,String> map = new HashMap<>();
         map.put("title","aa");
         Map<String,String>  map1 = new HashMap<>();
-        map.put("title","bb");
+        map1.put("title","bb");
         Map<String,String>  map2 = new HashMap<>();
-        map.put("title","cc");
+        map2.put("title","cc");
         List<Map<String,String>> list= new ArrayList<>();
         list.add(map);
         list.add(map1);
